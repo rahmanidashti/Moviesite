@@ -13,4 +13,8 @@
     <Folder Include="Models\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\assets\lib\mdi\.github\ISSUE_TEMPLATE.md" />
+  </ItemGroup>
+
 </Project>
