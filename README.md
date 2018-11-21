@@ -1,2 +1,2 @@
-# Moviesite
-A movie website for Software Engineering TAs
+# FilmSite
+This is a movie website to teach the fundemental concepts of web development and software engineering to BSc students.
