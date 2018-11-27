@@ -1,0 +1,111 @@
+﻿.film-list > .item .info-container .cast .text, .film-list > .item .info-container .director-country .text, .film-list > .item .info-container .genre-critic .critics .text, .film-list > .item .info-container .quality .text {
+	margin-left: 0.5rem;
+}
+
+.film-list > .item {
+	display: flex;
+	padding: 1em;
+	color: #555;
+	font-size: .95em;
+}
+
+	.film-list > .item:nth-of-type(2n+1) {
+		background: #f5f5f5;
+	}
+
+	.film-list > .item .poster-container {
+		width: 16em;
+		margin-left: 1em;
+	}
+
+		.film-list > .item .poster-container a:hover {
+			opacity: .7;
+		}
+
+		.film-list > .item .poster-container .poster {
+			width: 100%;
+		}
+
+	.film-list > .item .info-container .title {
+		font-size: 1.2em;
+		font-weight: bold;
+		direction: ltr;
+	}
+
+		.film-list > .item .info-container .title a:hover {
+			opacity: 0.7;
+		}
+
+	.film-list > .item .info-container .quality {
+		margin: 0.5em 0;
+	}
+
+		.film-list > .item .info-container .quality .value {
+			color: #ea4d00;
+		}
+
+	.film-list > .item .info-container .score .imdb, .film-list > .item .info-container .score .site {
+		padding: .25em 0.5em;
+		font-weight: bold;
+		margin-left: 0.5em;
+		display: inline-block;
+		min-width: 2.5em;
+		text-align: center;
+	}
+
+	.film-list > .item .info-container .score .imdb {
+		background: #fccb52;
+	}
+
+	.film-list > .item .info-container .score .site {
+		background: #bbb;
+	}
+
+	.film-list > .item .info-container .genre-critic {
+		display: flex;
+		justify-content: space-between;
+		margin: 0.5em 0;
+	}
+
+		.film-list > .item .info-container .genre-critic .genres .item:hover {
+			opacity: 0.7;
+		}
+
+	.film-list > .item .info-container .description {
+		padding-top: .5em;
+		border-top: 1px solid #eee;
+	}
+
+	.film-list > .item .info-container .director-country {
+		display: flex;
+		justify-content: space-between;
+		margin-top: .5em;
+	}
+
+		.film-list > .item .info-container .director-country .directors {
+			flex: 1;
+		}
+
+			.film-list > .item .info-container .director-country .directors .item {
+				color: #3c7cd4;
+			}
+
+				.film-list > .item .info-container .director-country .directors .item:hover {
+					color: #fccb52;
+				}
+
+		.film-list > .item .info-container .director-country .countries {
+			flex: 1;
+		}
+
+			.film-list > .item .info-container .director-country .countries .item:hover {
+				opacity: .7;
+			}
+
+	.film-list > .item .info-container .cast .item {
+		color: #3c7cd4;
+	}
+
+		.film-list > .item .info-container .cast .item:hover {
+			color: #fccb52;
+		}

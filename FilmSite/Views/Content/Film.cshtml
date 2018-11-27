@@ -1,0 +1,754 @@
+﻿
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	@*<meta name="viewport" content="width=device-width" />*@
+	<meta charset="utf-8" />
+
+	<title>Film</title>
+
+	<link href="/assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/assets/lib/mdi/css/materialdesignicons.min.css" rel="stylesheet" />
+	<link href="/assets/lib/OwlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet" />
+	<link href="/assets/lib/OwlCarousel/dist/assets/owl.theme.default.min.css" rel="stylesheet" />
+	<link href="/assets/css/movie.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="header-container">
+		<header>
+			<div class="container">
+				<div class="links">
+					<a class="logo" href="/">
+						<i class="icon mdi mdi-filmstrip"></i>
+						<span class="title">سایت فیلم</span>
+					</a>
+
+					<a class="item" href="">تماس با ما</a>
+					<a class="item" href="">درباره ما</a>
+				</div>
+
+				<div class="links">
+					<a class="item" href="">ورود</a>
+					<a class="item" href="">عضویت</a>
+				</div>
+			</div>
+		</header>
+		<nav>
+			<div class="container">
+				<div class="menu">
+					<div class="item">
+						<a class="content">
+							<i class="icon mdi mdi-home"></i>
+							<span class="title">خانه</span>
+						</a>
+					</div>
+
+					<div class="item">
+						<div class="content">
+							<i class="icon mdi mdi-movie"></i>
+							<span class="title">فیلم</span>
+							<i class="mdi mdi-chevron-down"></i>
+						</div>
+
+						<div class="sub-menu">
+							<div class="row">
+								<div class="col list">
+									<div class="title">فیلم‌ها</div>
+									<div class="item"><a href="">همه فیلم‌ها</a></div>
+									<div class="item"><a href="">پربازدیدترین فیلم‌ها</a></div>
+									<div class="item"><a href="">فیلم‌های برتر کاربران</a></div>
+								</div>
+
+								<div class="col list">
+									<div class="title">ویژه‌ها</div>
+									<div class="item"><a href="">250 فیلم برتر تاریخ</a></div>
+									<div class="item"><a href="">فیلم‌های برتر قرن 21</a></div>
+									<div class="item"><a href="">فیلم‌های برتر منتقدین</a></div>
+								</div>
+
+								<div class="col list">
+									<div class="title">برترین‌ها</div>
+									<div class="item"><a>برترین‌های 2017</a></div>
+									<div class="item"><a>برترین‌های 2016</a></div>
+									<div class="item"><a>برترین‌های 2015</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="content">
+							<i class="icon mdi mdi-television-classic"></i>
+							<span class="title">سریال</span>
+							<i class="mdi mdi-chevron-down"></i>
+						</div>
+
+						<div class="sub-menu">
+							<div class="row">
+								<div class="col list">
+									<div class="title">سریال‌ها</div>
+									<div class="item"><a href="">همه سریال‌ها</a></div>
+									<div class="item"><a href="">سریال‌های برتر کاربران</a></div>
+									<div class="item"><a href="">انیمه</a></div>
+								</div>
+
+								<div class="col list">
+									<div class="title">ویژه‌ها</div>
+									<div class="item"><a href="">250 سریال برتر تاریخ</a></div>
+									<div class="item"><a href="">سریال‌های برتر قرن 21</a></div>
+									<div class="item"><a href="">سریال‌های برتر منتقدین</a></div>
+								</div>
+
+								<div class="col list">
+									<div class="title">برترین‌ها</div>
+									<div class="item"><a>برترین‌های 2017</a></div>
+									<div class="item"><a>برترین‌های 2016</a></div>
+									<div class="item"><a>برترین‌های 2015</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="search-container">
+					<input type="search" placeholder="جستجوی فیلم، سریال، شخص یا ..." />
+					<button>
+						<i class="icon mdi mdi-magnify"></i>
+					</button>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="page container">
+		<div class="main row">
+			<main class="col-9">
+
+				<div class="film-info-container dark">
+					<div class="film-info">
+						<div>
+							<h3 class="title">
+								<span class="text">Incredibles 2</span>
+								<span class="year">(2018)</span>
+							</h3>
+							<div class="genres">
+								<a class="item">اکشن</a>،
+								<a class="item">انیمیشن</a>،
+								<a class="item">ماجراجویی</a>
+							</div>
+						</div>
+
+						<div class="scores">
+							<div class="score-register">
+								<div class="dropdown">
+									<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										امتیاز دهید
+									</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">1</a>
+										<a class="dropdown-item" href="#">2</a>
+										<a class="dropdown-item" href="#">3</a>
+										<a class="dropdown-item" href="#">4</a>
+										<a class="dropdown-item" href="#">5</a>
+										<a class="dropdown-item" href="#">6</a>
+										<a class="dropdown-item" href="#">7</a>
+										<a class="dropdown-item" href="#">8</a>
+										<a class="dropdown-item" href="#">9</a>
+										<a class="dropdown-item" href="#">10</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="values">
+								<div class="imdb">
+									<div class="value">8.5<span class="from">/10</span></div>
+									<div class="logo imdb">IMDB</div>
+								</div>
+
+								<div class="site">
+									<div class="value">9.1<span class="from">/10</span></div>
+									<div class="logo site">SITE</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="media">
+						<div class="poster">
+							<img src="~/assets/img/p-3.jpg" />
+						</div>
+
+						<div class="trailer">
+							<video id="trailer-player" controls="controls" preload="none">
+								<source src="~/assets/img/t-3.mp4" type="video/mp4" />
+							</video>
+
+							<div id="trailer-overlay" class="video-overlay">
+								<img src="~/assets/img/t-3.jpg" />
+								<i class="icon mdi mdi-play"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="film-info-container">
+					<div class="description">
+						شگفت‌انگیزان ۲ ، فیلمی انیمیشنی محصول سال ۲۰۱۸ به کارگردانی برد برد است. در خلاصه داستان قسمت دوم شگفت‌انگیزان آمده است ، هنگامی که هلن مشغول نجات دنیا در بیرون از خانه می‌باشد ، همسر او یعنی آفای شگفت‌انگیز باید از نوزادشان در خانه مراقبت کند. اما در این بین ماجراهای جالبی رخ می‌دهد که…
+					</div>
+
+					<div class="row">
+						<div class="directors col-4">
+							<span class="text">کارگردان:</span>
+							<span class="value">
+								<a class="item">Brad Bird</a>
+							</span>
+						</div>
+
+						<div class="cast col-8">
+							<span class="text">ستارگان:</span>
+							<span class="value">
+								<a class="item">Holly Hunter</a>،
+								<a class="item">Jonathan Banks</a>،
+								<a class="item">Samuel L. Jackson</a>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<section class="download-links">
+					<div class="section-header">
+						<i class="mdi mdi-download-outline ml-1"></i>
+						<span>لینک‌های دانلود</span>
+					</div>
+
+
+					<div class="item head">
+						<div class="quality">کیفیت</div>
+						<div class="encoder">انکدر</div>
+						<div class="extention">فایل</div>
+						<div class="volume ltr">حجم</div>
+						<div class="download">دانلود</div>
+					</div>
+
+					<div class="item">
+						<div class="quality">x265 BrRip 1080p</div>
+						<div class="encoder">PSA</div>
+						<div class="extention">MKV</div>
+						<div class="volume ltr">1.7 GB</div>
+						<div class="subtitle">
+							<a>
+								<i class="mdi mdi-subtitles-outline ml-1"></i>
+								<span>دانلود زیرنویس</span>
+							</a>
+						</div>
+						<div class="download">
+							<a>
+								<i class="mdi mdi-download-outline ml-1"></i>
+								<span>دانلود فیلم</span>
+							</a>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="quality">x265 BrRip 1080p</div>
+						<div class="encoder">RARBG</div>
+						<div class="extention">MKV</div>
+						<div class="volume">2.25 GB</div>
+						<div class="subtitle">
+							<a>
+								<i class="mdi mdi-subtitles-outline ml-1"></i>
+								<span>دانلود زیرنویس</span>
+							</a>
+						</div>
+						<div class="download">
+							<a>
+								<i class="mdi mdi-download-outline ml-1"></i>
+								<span>دانلود فیلم</span>
+							</a>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="comments">
+					<div class="section-header">
+						<i class="mdi mdi-comment-text-multiple-outline ml-1"></i>
+						<span>دیدگاه‌ها</span>
+					</div>
+
+					<div class="comments-bar">
+						<div class="count">ثبت دیدگاه</div>
+					</div>
+
+					<div class="comment-register">
+						<form action="/content/addComment" method="post">
+							<div class="input-group">
+								<textarea class="form-control" name="comment" data-val="true" data-val-required="این فیلد الزامی است." placeholder="دیدگاه خود را وارد کنید..."></textarea>
+							</div>
+							<div class="text-danger" data-valmsg-for="comment" data-valmsg-replace="true"></div>
+							<button type="submit" class="btn btn-outline-dark mt-3">ثبت دیدگاه</button>
+						</form>
+					</div>
+
+					<div class="comments-bar">
+						<div class="count">15 دیدگاه</div>
+
+						<div class="order-types">
+							<a class="item active">قدیمی</a>
+							<a class="item">جدید</a>
+							<a class="item">بیشترین امتیاز</a>
+						</div>
+					</div>
+
+					<div class="items">
+						<div class="comment">
+							<div class="user-picture-col">
+								<a class="user-picture empty">
+									<i class="mdi mdi-account"></i>
+								</a>
+							</div>
+
+							<div class="content-col">
+								<div class="header">
+									<a class="user-name">رسول</a>
+									<span class="time"> 8 ساعت پیش</span>
+								</div>
+
+								<div class="content">لطفا کیفیت بهتر رو اضافه کنید ! ممنون</div>
+
+								<div class="footer">
+									<div>
+										<a class="like">
+											<span>4</span>
+											<i class="mdi mdi-thumb-up"></i>
+										</a>
+										<a class="dislike">
+											<i class="mdi mdi-thumb-down"></i>
+											<span>0</span>
+										</a>
+									</div>
+
+									<div>
+										<a class="action mdi mdi-reply" title="پاسخ"></a>
+										<a class="action mdi mdi-flag" title="گزارش"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="comment">
+							<div class="user-picture-col">
+								<a class="user-picture empty">
+									<img src="~/assets/img/pp-1.jpg" />
+								</a>
+							</div>
+
+							<div class="content-col">
+								<div class="header">
+									<a class="user-name">وحید</a>
+									<span class="time"> 9 ساعت پیش</span>
+								</div>
+
+								<div class="content">
+									@@رسول
+									اضافه شد
+								</div>
+
+								<div class="footer">
+									<div>
+										<a class="like">
+											<span>0</span>
+											<i class="mdi mdi-thumb-up"></i>
+										</a>
+										<a class="dislike">
+											<i class="mdi mdi-thumb-down"></i>
+											<span>0</span>
+										</a>
+									</div>
+
+									<div>
+										<a class="action mdi mdi-reply" title="پاسخ"></a>
+										<a class="action mdi mdi-flag" title="گزارش"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="comment">
+							<div class="user-picture-col">
+								<a class="user-picture empty">
+									<i class="mdi mdi-account"></i>
+								</a>
+							</div>
+
+							<div class="content-col">
+								<div class="header">
+									<a class="user-name">رسول</a>
+									<span class="time"> 8 ساعت پیش</span>
+								</div>
+
+								<div class="content">لطفا کیفیت بهتر رو اضافه کنید ! ممنون</div>
+
+								<div class="footer">
+									<div>
+										<a class="like">
+											<span>4</span>
+											<i class="mdi mdi-thumb-up"></i>
+										</a>
+										<a class="dislike">
+											<i class="mdi mdi-thumb-down"></i>
+											<span>0</span>
+										</a>
+									</div>
+
+									<div>
+										<a class="action mdi mdi-reply" title="پاسخ"></a>
+										<a class="action mdi mdi-flag" title="گزارش"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="comment">
+							<div class="user-picture-col">
+								<a class="user-picture empty">
+									<img src="~/assets/img/pp-1.jpg" />
+								</a>
+							</div>
+
+							<div class="content-col">
+								<div class="header">
+									<a class="user-name">وحید</a>
+									<span class="time"> 9 ساعت پیش</span>
+								</div>
+
+								<div class="content">
+									@@رسول
+									اضافه شد
+								</div>
+
+								<div class="footer">
+									<div>
+										<a class="like">
+											<span>0</span>
+											<i class="mdi mdi-thumb-up"></i>
+										</a>
+										<a class="dislike">
+											<i class="mdi mdi-thumb-down"></i>
+											<span>0</span>
+										</a>
+									</div>
+
+									<div>
+										<a class="action mdi mdi-reply" title="پاسخ"></a>
+										<a class="action mdi mdi-flag" title="گزارش"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="comment">
+							<div class="user-picture-col">
+								<a class="user-picture empty">
+									<i class="mdi mdi-account"></i>
+								</a>
+							</div>
+
+							<div class="content-col">
+								<div class="header">
+									<a class="user-name">رسول</a>
+									<span class="time"> 8 ساعت پیش</span>
+								</div>
+
+								<div class="content">لطفا کیفیت بهتر رو اضافه کنید ! ممنون</div>
+
+								<div class="footer">
+									<div>
+										<a class="like">
+											<span>4</span>
+											<i class="mdi mdi-thumb-up"></i>
+										</a>
+										<a class="dislike">
+											<i class="mdi mdi-thumb-down"></i>
+											<span>0</span>
+										</a>
+									</div>
+
+									<div>
+										<a class="action mdi mdi-reply" title="پاسخ"></a>
+										<a class="action mdi mdi-flag" title="گزارش"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="comment">
+							<div class="user-picture-col">
+								<a class="user-picture empty">
+									<img src="~/assets/img/pp-1.jpg" />
+								</a>
+							</div>
+
+							<div class="content-col">
+								<div class="header">
+									<a class="user-name">وحید</a>
+									<span class="time"> 9 ساعت پیش</span>
+								</div>
+
+								<div class="content">
+									@@رسول
+									اضافه شد
+								</div>
+
+								<div class="footer">
+									<div>
+										<a class="like">
+											<span>0</span>
+											<i class="mdi mdi-thumb-up"></i>
+										</a>
+										<a class="dislike">
+											<i class="mdi mdi-thumb-down"></i>
+											<span>0</span>
+										</a>
+									</div>
+
+									<div>
+										<a class="action mdi mdi-reply" title="پاسخ"></a>
+										<a class="action mdi mdi-flag" title="گزارش"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</main>
+
+			<aside class="col-3">
+
+				<div class="genres-list">
+					<div class="title">ژانر فیلم‌ها</div>
+
+					<div class="row list">
+						<div class="col">
+							<div class="item">
+								<a class="text">ابرقهرمانی</a>
+								<span class="value">(1)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">کمدی</a>
+								<span class="value">(134)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">عاشقانه</a>
+								<span class="value">(111)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">رزمی</a>
+								<span class="value">(111)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">ابرقهرمانی</a>
+								<span class="value">(1)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">کمدی</a>
+								<span class="value">(134)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">عاشقانه</a>
+								<span class="value">(111)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">رزمی</a>
+								<span class="value">(111)</span>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="item">
+								<a class="text">ابرقهرمانی</a>
+								<span class="value">(1)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">کمدی</a>
+								<span class="value">(134)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">عاشقانه</a>
+								<span class="value">(111)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">رزمی</a>
+								<span class="value">(111)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">ابرقهرمانی</a>
+								<span class="value">(1)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">کمدی</a>
+								<span class="value">(134)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">عاشقانه</a>
+								<span class="value">(111)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">رزمی</a>
+								<span class="value">(111)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="genres-list">
+					<div class="title">ژانر سریال‌ها</div>
+
+					<div class="row list">
+						<div class="col">
+							<div class="item">
+								<a class="text">ابرقهرمانی</a>
+								<span class="value">(1)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">کمدی</a>
+								<span class="value">(134)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">عاشقانه</a>
+								<span class="value">(111)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">رزمی</a>
+								<span class="value">(111)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">ابرقهرمانی</a>
+								<span class="value">(1)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">کمدی</a>
+								<span class="value">(134)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">عاشقانه</a>
+								<span class="value">(111)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">رزمی</a>
+								<span class="value">(111)</span>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="item">
+								<a class="text">ابرقهرمانی</a>
+								<span class="value">(1)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">کمدی</a>
+								<span class="value">(134)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">عاشقانه</a>
+								<span class="value">(111)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">رزمی</a>
+								<span class="value">(111)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">ابرقهرمانی</a>
+								<span class="value">(1)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">کمدی</a>
+								<span class="value">(134)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">عاشقانه</a>
+								<span class="value">(111)</span>
+							</div>
+
+							<div class="item">
+								<a class="text">رزمی</a>
+								<span class="value">(111)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</aside>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div>کلیه حقوق محفوظ است - <span class="ltr">&copy; 2018</span></div>
+			<div style="font-size:1.5em">
+				<i class="mdi mdi-monitor"></i>
+				<i class="mdi mdi-tablet-ipad"></i>
+				<i class="mdi mdi-cellphone"></i>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="/assets/lib/jquery/jquery.min.js"></script>
+	<script src="/assets/lib/bootstrap/js/popper.min.js"></script>
+	<script src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/assets/lib/OwlCarousel/dist/owl.carousel.min.js"></script>
+	<script src="~/assets/lib/jquery/jquery-validation/dist/jquery.validate.min.js"></script>
+	<script src="~/assets/lib/jquery/jquery-validation-unobtrusive-master/src/jquery.validate.unobtrusive.js"></script>
+
+	<script>
+		$('#trailer-overlay').click(function () {
+			$('#trailer-player')[0].play();
+			$(this).hide();
+		})
+
+		$('#trailer-player').on('ended', function () {
+			$(this)[0].load();
+			$('#trailer-overlay').show();
+		})
+	</script>
+</body>
+</html>

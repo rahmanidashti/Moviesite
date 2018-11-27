@@ -6,23 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FilmSite.Controllers
 {
-    public class ContentController : Controller
-    {
-        public IActionResult Index()
-        {
-			var data = new
-			{
-				name = "Ali",
-				family = "Alizadeh"
-			};
-
-
-            return Json(data);
-        }
+	public class ContentController : Controller
+	{
+		public IActionResult Film(string id)
+		{
+			return View();
+		}
 
 		public IActionResult List()
 		{
 			return View();
 		}
-    }
+	}
 }
